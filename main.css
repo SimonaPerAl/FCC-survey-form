@@ -1,0 +1,113 @@
+*{
+	font-family: sans-serif;
+}
+body{
+	background-color: #6B9EC9;
+	justify-content: center;
+	margin: 0;
+}
+main{
+	width: 700px;
+	justify-content: center;
+	text-align: justify;
+	background-color: #ffffff;
+	padding: 0px 30px 30px 30px;
+	border-radius: 50px;
+	margin:  auto;
+	margin-top: 30px;
+}
+
+img{
+	display: block;
+	margin: auto;
+}
+h1{
+	text-align: center;
+}
+ul{
+	margin-left: 80px;
+	padding: 0px;
+	vertical-align: center;
+}
+li{
+	list-style: none;
+	width: auto;
+}
+label{
+	margin-top: 5px;
+	display: block;
+}
+
+input, select{
+	vertical-align: bottom;
+	height: 20px;
+}
+#comments{
+	width: 690px;
+	height: 200px;
+	justify-content: center;
+}
+button{
+	background-color: #B20032;
+	color: #ffffff;
+	border: 0 solid;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 1em;
+	width: 100px;
+	height: 50px;
+	align-content: center;
+	margin-left: 80px;
+
+}
+footer {
+	background-color: #C1335B;
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	height: 50px;
+	padding: 10px;
+	position: relative;
+	bottom: 0;
+	margin-top: 30px;
+	font-size:15px;
+	}
+.input-field, .dropdown{
+	width: 250px;
+	height: 25px;
+	margin: 5px;
+	margin-right: 400px;
+	padding: 0px;
+}
+.use, .request{
+	vertical-align: middle;
+	margin-right: 10px;
+	text-align: center;
+}
+.radio{
+	display: inline;
+}
+.demographics{
+margin-left: 80px;
+}
+#dropdown{
+	margin-left: 82px;
+}
+
+@media screen and (max-width: 700px) {
+	ul, li, button, .demographics, #dropdown {
+		margin: 5px;
+			}
+	main{
+		width: 100%;
+		margin: 0px;
+		padding: 10px;
+	}
+	.input-field, .dropdown, #dropdown,{
+		width: 70%;		
+	}
+
+	#comments{
+		width: 90%;
+	}
+}

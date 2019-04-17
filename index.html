@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<main>
+		<header>
+			<img src="https://i.imgur.com/rsEmw8K.jpg" alt="Blue Valley Public Library">
+			<h1 id="title">Survey Form</h1>
+			<p id= "description">We've made a short survey to get to know our patrons and provide them with a better service. Thank you for taking your time answering it.</p>
+		</header>
+		<article>
+			
+			<form id="survey-form">
+				<div class="demographics">			
+				<label id="name-label" for="name"> *Name: </label>
+				<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+				</div>	
+
+				<div class="demographics">
+				<label id="email-label" for="email"> *Email: </label>
+				<input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+				</div>
+
+				<div class="demographics">
+				<label id="number-label" for="age"> *Age: </label>
+				<input type="number" name="age" id="number" class="input-field" placeholder="Enter your age" min="1" max="200" required>
+				</div>
+
+				<div class="demographics">
+				<label> Gender </label>
+				<select class="dropdown">
+					<option disabled value selected="">Select an option</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+					<option value="nocomm">I'd rather not say</option>
+				</select>
+				</div>
+
+				<div>
+				<label> What is the highest level of school you have completed or the highest degree you have received?</label>
+				<select id="dropdown" class="dropdown">
+					<option disabled value selected="">Select an option</option>
+					<option value="some-highscool">Less than high school degree</option>
+					<option value="highscool">high school degree or equivalent</option>
+					<option value="some-college">Some college but no degree</option>
+					<option value="associate">Associate degree</option>
+					<option value="bachelor">Bachelor degree</option>
+					<option value="graduate">Graduate degree</option>
+				</select>
+				</div>
+
+				<div>
+				<label for="how-often"> *How often do you come to the library? </label>
+				<ul>
+					<input type="radio" name="radio-buttons" value="3" class="frequency">
+					<li class="radio"> Weekly </li>
+					<input type="radio" name="radio-buttons" value="2" class="frequency">
+					<li class="radio"> Monthly </li>
+					<input type="radio" name="radio-buttons" value="1" class="frequency">
+					<li class="radio"> Less than once a month </li>					
+				</ul>
+				</div>
+
+				<div>
+				<label for="regularly-uses">What services do you use regularly? (Check all that apply)</label>
+				<ul>
+					<li class="checkbox">
+						<label><input name="habits" value="1" type="checkbox" class="use">General collection</label>
+					</li>
+					<li class="checkbox">
+						<label><input name="habits" value="2" type="checkbox" class="use">Children collection</label>
+					</li>
+					<li class="checkbox">
+						<label><input name="habits" value="3" type="checkbox" class="use">Computers and/or internet access</label>
+					</li>
+					<li class="checkbox">
+						<label><input name="habits" value="4" type="checkbox" class="use">The reading room</label>
+					</li>
+					<li class="checkbox">
+						<label><input name="habits" value="5" type="checkbox" class="use">Afternoon classes</label>
+					</li>
+				</ul>
+				</div>
+
+				<div>
+				<label for="would-like">What would you like? (Check all that apply)</label>
+				<ul>
+					<li class="checkbox">
+						<label><input name="prefer" value="1" type="checkbox" class="request">More fiction books in the general collection</label>
+					</li>
+					<li class="checkbox">
+						<label><input name="prefer" value="2" type="checkbox" class="request">More fiction books in the children collection</label>
+					</li>
+					<li class="checkbox">
+						<label><input name="prefer" value="3" type="checkbox" class="request">More textbooks</label>
+					</li>
+					<li class="checkbox">
+						<label><input name="prefer" value="4" type="checkbox" class="request">More non-fiction books (not textbooks)</label>
+					</li>
+					<li class="checkbox">
+						<label><input name="prefer" value="5" type="checkbox" class="request">More Afternoon classes</label>
+					</li>
+					<li class="checkbox">
+						<label><input name="prefer" value="6" type="checkbox" class="request">Something else (specify in the comments)</label>
+					</li>
+				</ul>
+				</div>
+
+				<div>
+				<label>Anything else you want to tell us?</label>
+				<textarea id="comments" class="input-field"  name="comment" placeholder="Enter your comment here..."></textarea>
+				</div>
+
+				<button id="submit" type="submit">Submit</button>
+			</form>
+		</article>		
+	</main>
+	<footer>
+		Texto y código de Simona PerAl. <a href="https://github.com/SimonaPerAl" target="_blank"><img style="margin-top: 3px;" src="https://i.imgur.com/jGk2qKD.png">
+	</footer>
+</body>
+</html>
